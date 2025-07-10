@@ -38,16 +38,11 @@ h1 {
   color: #22262a;
   cursor: pointer;
 }
-.header {
-  background: #7cacf8;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-}
-.full-height {
-  height: 100vh;
+
+.page {
+  padding-top: 60px;
+  max-width: 760px;
+  margin: 0 auto;
 }
 .container {
   display: flex;
@@ -92,15 +87,6 @@ h1 {
   .card__list {
     grid-template-columns: 1fr 1fr;
   }
-  .header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    Grid-column-gap: 10px;
-    height: auto;
-    text-align: center;
-    padding: 16px;
-  }
   .search {
     width: 100%;
   }
@@ -110,5 +96,9 @@ h1 {
   .card__list {
     grid-template-columns: 1fr;
   }
+}
+
+.text-center {
+  text-align: center;
 }
 </style>
