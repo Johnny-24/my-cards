@@ -1,17 +1,16 @@
 <template>
   <header class="header">
-      <a-button v-if="!isHomePage" type="link" shape="circle" @click="linkTo('index')" :icon="h(ArrowLeftOutlined)">Назад</a-button>
+    <Button v-if="!isHomePage" icon="pi pi-plus" rounded aria-label="Filter"  @click="linkTo('create')" />
       <Logo />
-      <a-button v-if="isHomePage" type="primary" shape="circle" @click="linkTo('create')" :icon="h(PlusOutlined)"></a-button>
+      <Button v-if="isHomePage" icon="pi pi-plus" rounded aria-label="Filter"  @click="linkTo('create')" />
     </header>
 </template>
 
 <script setup>
   import { useRouter, useRoute } from 'vue-router';
   import Logo from '../components/Logo.vue'
-  import { h, computed } from 'vue';
-  import { PlusOutlined, ArrowLeftOutlined } from '@ant-design/icons-vue';
-
+  import { computed } from 'vue';
+  import Button from 'primevue/button';
   const router = useRouter();
   const route = useRoute();
 
@@ -34,7 +33,6 @@
   top: 0;
   width: 100%;
   z-index: 10;
-  background: #22262a;
   max-width: 760px;
 }
 </style>

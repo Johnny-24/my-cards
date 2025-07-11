@@ -1,18 +1,38 @@
-<template>
-  <div class="full-height">
-    <header class="header">
-      <router-link to="/">Назад </router-link>
-    </header>
+<!-- <template>
+  <div class="page">
+    <Header />
     <div class="container">
       <h1 class="title">Добавление карты</h1>
-      <input type="text" placeholder="Название карты">
-      <br>
-      <input type="number" placeholder="нопер карты">
-      <br>
-      <input type="color" placeholder="Цвет карты">
-      <br>
-      <input type="file" placeholder="Картинка карты">
-      <br>
+      <a-form
+        :model="formState"
+        name="basic"
+        :wrapper-col="{ span: 16 }"
+        autocomplete="off"
+        @finish="onFinish"
+        @finishFailed="onFinishFailed"
+      >
+        <a-form-item
+          label="Название карты"
+          name="cardName"
+          :rules="[{ required: true, message: 'Введите название карты' }]"
+        >
+          <a-input v-model:value="formState.username" />
+        </a-form-item>
+        <a-form-item
+          label="Номер карты"
+          name="cardNumber"
+          :rules="[{ required: true, message: 'Введите номер карты' }]"
+        >
+          <a-input v-model:value="formState.username" />
+        </a-form-item>
+
+
+        <input type="color" placeholder="Цвет карты">
+        <br>
+        <input type="file" placeholder="Картинка карты">
+        <br>
+      </a-form>
+
 
       <button class="btn">Сохранить</button>
     </div>
@@ -20,20 +40,24 @@
 </template>
 
 <script setup>
+import { reactive } from 'vue'
+import Header from '../components/Header.vue'
+
+const formState = reactive({
+  username: '',
+  cardNumber: ''
+})
+
+const onFinishFailed = () => {
+
+}
+
+const onFinish = () => {
+
+}
+
 </script>
 
 <style scoped>
-.title {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #ced1d5;
-}
-.container {
-  flex-direction: column;
-}
 
-.btn {
-  margin-top: auto;
-  margin-top: 50px;
-}
-</style>
+</style> -->

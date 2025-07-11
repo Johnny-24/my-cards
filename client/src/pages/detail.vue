@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="page">
     <Header />
 
@@ -34,4 +34,4 @@ const linkTo = (url) => {
 
 <style scoped>
 
-</style>
+</style> -->

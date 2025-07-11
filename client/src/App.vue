@@ -6,12 +6,6 @@
 </script>
 
 <style>
-body, html {
-  margin: 0;
-  padding: 0;
-  background: #22262a;
-  color: #ced1d5;
-}
 body * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -21,35 +15,10 @@ body * {
   font-variation-settings:
     "wdth" 100;
 }
-h1 {
-  margin: 0;
-  font-weight: 600px;
-}
-.search {
-  width: 50%;
-  height: 31px;
-  outline: navajowhite;
-}
-.btn {
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  background: #fa8b58;
-  color: #22262a;
-  cursor: pointer;
-}
-
 .page {
   padding-top: 60px;
   max-width: 760px;
   margin: 0 auto;
-}
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  flex-direction: column;
 }
 
 .card__list {

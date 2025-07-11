@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="full-height">
     <header class="header">
       <router-link to="/">Назад </router-link>
@@ -36,4 +36,4 @@
   margin-top: auto;
   margin-top: 50px;
 }
-</style>
+</style> -->
